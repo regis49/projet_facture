@@ -1,0 +1,28 @@
+GET http://localhost:5000/factures
+
+###
+GET http://localhost:5000/factures/1
+
+
+###
+POST http://localhost:5000/factures
+Content-Type: application/json
+
+{
+    "code": "7",
+    "libelle": "opt"
+}
+
+
+###
+PATCH  http://localhost:5000/factures/3
+Content-Type: application/json
+
+{
+    "code": "3",
+    "libelle": "KDKDJJD"
+}
+
+
+###
+DELETE  http://localhost:5000/factures/1
